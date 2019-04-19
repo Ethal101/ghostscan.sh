@@ -27,7 +27,7 @@ PREFIX="tk_"
 GHOST_USER="monitoring"  ## Nom de l'utilisateur qui execute la récupération du hostname
 GHOST_IDRSA_PATH="/home/monit/.ssh/id_rsa" ## Chemin d'accès de la clé idrsa privée de l'utilisateur
 
-for IP in "seq 1 254";do
+for IP in `seq 1 254`;do
 PINGOK=""
 SSHOK=""
 MYHOST=""
